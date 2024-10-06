@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: url('Screenshot 2024-10-02 120337.png') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .services {
+            padding: 50px 0;
+        }
+        .services .card {
+            transition: 0.3s;
+        }
+        .services .card:hover {
+            transform: scale(1.05);
+        }
+        .services .card-img-top {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Healthy Living</h1>
+            <p>Your Journey to Wellness Starts Here</p>
+            <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services text-center container">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\Users\ADMIN\Downloads\—Pngtree—healthy lifestyle for all_1059865.jpg" class="card-img-top" alt="Fitness Image">
+                    <div class="card-body">
+                        <i class="fas fa-dumbbell fa-3x"></i>
+                        <h3>Fitness</h3>
+                        <p>Personalized fitness plans for your lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\Users\ADMIN\Documents\New folder\nutrition.png" class="card-img-top" alt="Nutrition Image">
+                    <div class="card-body">
+                        <i class="fas fa-apple-alt fa-3x"></i>
+                        <h3>Nutrition</h3>
+                        <p>Healthy meal plans designed by experts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\Users\ADMIN\Documents\New folder\mental_health.png" class="card-img-top" alt="Mental Health Image">
+                    <div class="card-body">
+                        <i class="fas fa-spa fa-3x"></i>
+                        <h3>Mental Health</h3>
+                        <p>Guided meditation and wellness programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials text-center container">
+        <h2>What Our Clients Say</h2>
+        <blockquote>"Healthy Living changed my life for the better! I feel more energized and positive every day."</blockquote>
+        <cite>- Alex Smith</cite>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact text-center container">
+        <h2>Contact Us</h2>
+        <!-- Form that redirects to thank you page after submission -->
+        <form id="contactForm">
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Healthy Living. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            // Redirect to thank you page
+            window.location.href = "thankyou.html";
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
